@@ -174,13 +174,13 @@ r.json()
 >>>
 ```
 
-Yes, you just downloaded a web page, parsed an XML document, and
+Yes, you just downloaded a web page, parsed a JSON document, and
 extracted some useful information in about 6 lines of code. The data
 you accessed is actually feeding the website
-<http://ctabustracker.com/bustime/home.jsp>. Try it again and watch
+<http://translink.ca>. Try it again and watch
 the predictions change.
 
-If the first import statement `import urllib.request` fails, you’re
+If the first import statement `import requests` fails, you’re
 probably using Python 2. For this course, you need to make sure you’re
 using Python 3.6 or newer. Go to <https://www.python.org> to download
 it if you need it.
