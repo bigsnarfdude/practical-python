@@ -150,16 +150,27 @@ long people waiting on the corner of Clark street and Balmoral in
 Chicago will have to wait for the next northbound CTA \#22 bus:
 
 ```python
->>> import urllib.request
->>> u = urllib.request.urlopen('http://ctabustracker.com/bustime/map/getStopPredictions.jsp?stop=14791&route=22')
->>> from xml.etree.ElementTree import parse
->>> doc = parse(u)
->>> for pt in doc.findall('.//pt'):
-        print(pt.text)
 
-6 MIN
-18 MIN
-28 MIN
+import requests
+apiKey = 'Qtpk5CF0qO6'
+url = 'http://api.translink.ca/RTTIAPI/V1/stops/55612?apiKey=Qtpk5CF0qO6'
+headers = {"Accept": "application/JSON "}
+r = requests.get(url=url, headers=headers)
+r.json()
+
+
+{'StopNo': 55612,
+ 'Name': 'SURREY CENTRAL STN BAY 4',
+ 'BayNo': '4  ',
+ 'City': 'SURREY',
+ 'OnStreet': 'SURREY CENTRAL STN',
+ 'AtStreet': 'BAY 4',
+ 'Latitude': 49.18885,
+ 'Longitude': -122.849361,
+ 'WheelchairAccess': 1,
+ 'Distance': -1,
+ 'Routes': '501, 509, N19'}
+
 >>>
 ```
 
