@@ -40,8 +40,7 @@ able to type `python` like this:
 
 ```
 bash $ python
-Python 3.8.1 (default, Feb 20 2020, 09:29:22)
-[Clang 10.0.0 (clang-1000.10.44.4)] on darwin
+Python 3.11.5 (main, Aug 24 2023, 15:23:30) [Clang 14.0.0 (clang-1400.0.29.202)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>> print("hello world")
 hello world
