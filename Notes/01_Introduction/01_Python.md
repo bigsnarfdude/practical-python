@@ -196,7 +196,7 @@ exercise work. For example:
 ```
 
 If you can't make this work, don't worry about it.  The rest of this course
-has nothing to do with parsing XML.
+has nothing to do with parsing JSON.
 
 [Contents](../Contents.md) \| [Next (1.2 A First Program)](02_Hello_world.md)
 
