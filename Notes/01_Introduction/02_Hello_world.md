@@ -31,7 +31,7 @@ When you start Python, you get an *interactive* mode where you can experiment.
 If you start typing statements, they will run immediately. There is no
 edit/compile/run/debug cycle.
 
-```python
+```python3
 >>> print('hello world')
 hello world
 >>> 37*42
@@ -64,7 +64,7 @@ it is shown as blanks to make it easier to cut/paste code samples.
 
 The underscore `_` holds the last result.
 
-```python
+```python3
 >>> 37 * 42
 1554
 >>> _ * 2
@@ -80,7 +80,7 @@ The underscore `_` holds the last result.
 
 Programs are put in `.py` files.
 
-```python
+```python3
 # hello.py
 print('hello world')
 ```
@@ -93,7 +93,7 @@ To execute a program, run it in the terminal with the `python` command.
 For example, in command-line Unix:
 
 ```bash
-bash % python hello.py
+bash % python3 hello.py
 hello world
 bash %
 ```
@@ -122,7 +122,7 @@ Let's solve the following problem:
 
 Here's a solution:
 
-```python
+```python3
 # sears.py
 bill_thickness = 0.11 * 0.001 # Meters (0.11 mm)
 sears_height = 442 # Height (meters)
@@ -160,7 +160,7 @@ Using this program as a guide, you can learn a number of important core concepts
 
 A python program is a sequence of statements:
 
-```python
+```python3
 a = 3 + 4
 b = a * 2
 print(b)
@@ -172,7 +172,7 @@ Each statement is terminated by a newline. Statements are executed one after the
 
 Comments are text that will not be executed.
 
-```python
+```python3
 a = 3 + 4
 # This is a comment
 b = a * 2
@@ -188,7 +188,7 @@ upper-case) from a to z. As well as the character underscore `_`.
 Numbers can also be part of the name of a variable, except as the
 first character.
 
-```python
+```python3
 height = 442 # valid
 _height = 442 # valid
 height2 = 442 # valid
@@ -200,7 +200,7 @@ height2 = 442 # valid
 Variables do not need to be declared with the type of the value.  The type
 is associated with the value on the right hand side, not name of the variable.
 
-```python
+```python3
 height = 442           # An integer
 height = 442.0         # Floating point
 height = 'Really tall' # A string
@@ -214,7 +214,7 @@ as a program executes depending on the current value assigned to it.
 Python is case sensitive. Upper and lower-case letters are considered different letters.
 These are all different variables:
 
-```python
+```python3
 name = 'Jake'
 Name = 'Elwood'
 NAME = 'Guido'
@@ -222,7 +222,7 @@ NAME = 'Guido'
 
 Language statements are always lower-case.
 
-```python
+```python3
 while x < 0:   # OK
 WHILE x < 0:   # ERROR
 ```
@@ -231,7 +231,7 @@ WHILE x < 0:   # ERROR
 
 The `while` statement executes a loop.
 
-```python
+```python3
 while num_bills * bill_thickness < sears_height:
     print(day, num_bills, num_bills * bill_thickness)
     day = day + 1
@@ -247,7 +247,7 @@ The statements indented below the `while` will execute as long as the expression
 Indentation is used to denote groups of statements that go together.
 Consider the previous example:
 
-```python
+```python3
 while num_bills * bill_thickness < sears_height:
     print(day, num_bills, num_bills * bill_thickness)
     day = day + 1
@@ -258,7 +258,7 @@ print('Number of days', days)
 
 Indentation groups the following statements together as the operations that repeat:
 
-```python
+```python3
     print(day, num_bills, num_bills * bill_thickness)
     day = day + 1
     num_bills = num_bills * 2
@@ -277,7 +277,7 @@ readability. It does not affect the execution.
 Python's only requirement is that indentation within the same block
 be consistent.   For example, this is an error:
 
-```python
+```python3
 while num_bills * bill_thickness < sears_height:
     print(day, num_bills, num_bills * bill_thickness)
         day = day + 1 # ERROR
@@ -288,7 +288,7 @@ while num_bills * bill_thickness < sears_height:
 
 The `if` statement is used to execute a conditional:
 
-```python
+```python3
 if a > b:
     print('Computer says no')
 else:
@@ -297,7 +297,7 @@ else:
 
 You can check for multiple conditions by adding extra checks using `elif`.
 
-```python
+```python3
 if a > b:
     print('Computer says no')
 elif a == b:
@@ -310,27 +310,27 @@ else:
 
 The `print` function produces a single line of text with the values passed.
 
-```python
+```python3
 print('Hello world!') # Prints the text 'Hello world!'
 ```
 
 You can use variables. The text printed will be the value of the variable, not the name.
 
-```python
+```python3
 x = 100
 print(x) # Prints the text '100'
 ```
 
 If you pass more than one value to `print` they are separated by spaces.
 
-```python
+```python3
 name = 'Jake'
 print('My name is', name) # Print the text 'My name is Jake'
 ```
 
 `print()` always puts a newline at the end.
 
-```python
+```python3
 print('Hello')
 print('My name is', 'Jake')
 ```
@@ -344,7 +344,7 @@ My name is Jake
 
 The extra newline can be suppressed:
 
-```python
+```python3
 print('Hello', end=' ')
 print('My name is', 'Jake')
 ```
@@ -359,7 +359,7 @@ Hello My name is Jake
 
 To read a line of typed user input, use the `input()` function:
 
-```python
+```python3
 name = input('Enter your name:')
 print('Your name is', name)
 ```
@@ -372,7 +372,7 @@ It is not widely used for real programs.
 
 Sometimes you need to specify an empty code block. The keyword `pass` is used for it.
 
-```python
+```python3
 if a > b:
     pass
 else:
@@ -431,7 +431,7 @@ Your program should make a table that looks something like this:
 
 The following code fragment contains code from the Sears tower problem.  It also has a bug in it.
 
-```python
+```python3
 # sears.py
 
 bill_thickness = 0.11 * 0.001    # Meters (0.11 mm)
