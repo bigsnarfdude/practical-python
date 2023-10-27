@@ -145,7 +145,7 @@ the class by typing in code slowly and thinking about it--not cut and pasting.
 ### Exercise 1.4: Where is My Bus?
 
 Try something more advanced and type these statements to find out how
-long people waiting for the bus:
+where bus stop 55612 is located:
 
 ```python
 
