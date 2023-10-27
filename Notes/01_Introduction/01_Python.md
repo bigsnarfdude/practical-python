@@ -151,9 +151,9 @@ long people waiting for the bus:
 
 import requests
 apiKey = 'Qtpk5CF0qO6'
-url = 'http://api.translink.ca/RTTIAPI/V1/stops/55612?apiKey=Qtpk5CF0qO6'
+url = 'http://api.translink.ca/RTTIAPI/V1/stops/55612?apiKey='
 headers = {"Accept": "application/JSON "}
-r = requests.get(url=url, headers=headers)
+r = requests.get(url=url+apiKey, headers=headers)
 r.json()
 
 
