@@ -51,10 +51,13 @@ An example when reading records from a file.
 ```python
 records = []  # Initial empty list
 
-with open('Data/portfolio.csv', 'rt') as f:
-    for line in f:
-        row = line.split(',')
-        records.append((row[0], int(row[1])), float(row[2]))
+
+with open('Data/portfolio.csv', 'rt') as infile:
+    reader = csv.reader(infile)
+    next(reader, None)
+    for row in reader:
+        records.append((row[0], int(row[1]), float(row[2])))
+
 ```
 
 ### Dicts as a Container
